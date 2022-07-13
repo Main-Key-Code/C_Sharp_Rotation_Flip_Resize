@@ -23,10 +23,12 @@ namespace C_Sharp_Rotation_Flip_Resize
         {
             using (OpenFileDialog oDialog = new OpenFileDialog())
             {
+                oDialog.InitialDirectory = Application.StartupPath;
+                //oDialog.Filter = "그림 파일  (*.jpg, *.gif, *.bmp) | *.jpg; *.gif; *.bmp; | *.*";
+                //oDialog.Filter = "*.jpg;";
+
                 if (oDialog.ShowDialog() == DialogResult.OK)
                 {
-                    oDialog.InitialDirectory = Application.StartupPath;
-                    oDialog.Filter = "그림 파일  (*.jpg, *.gif, *.bmp) | *.jpg; *.gif; *.bmp; | *.*";
 
                     //MessageBox.Show(Properties.Resources.Tagicoma_04.ToString());
 
