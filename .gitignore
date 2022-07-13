@@ -1,0 +1,26 @@
+# Build results
+**/[Dd]ebug/
+**/[Dd]ebugPublic/
+**/[Rr]elease/
+**/[Rr]eleases/
+**/x64/
+**/x86/
+**/[Ww][Ii][Nn]32/
+**/[Aa][Rr][Mm]/
+**/[Aa][Rr][Mm]64/
+**/bld/
+**/[Bb]in/
+**/[Oo]bj/
+**/[Ll]og/
+**/[Ll]ogs/
+**/$[Tt][Ff]/
+
+# 개인적으로 제외 파일
+#*[문서]/
+**/[Dd][Aa][Tt]/
+**/*[Bb][Aa][Cc][Kk][Uu][Pp]/
+**/__**/
+**desktop.ini
+
+# Visual Studio 2015/2017 cache/options directory
+**/.vs/
