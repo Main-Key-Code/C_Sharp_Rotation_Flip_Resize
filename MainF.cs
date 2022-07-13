@@ -21,17 +21,15 @@ namespace C_Sharp_Rotation_Flip_Resize
 
         private void MainF_Load(object sender, EventArgs e)
         {
-
-
-            using(OpenFileDialog oDialog = new OpenFileDialog())
-            { 
+            using (OpenFileDialog oDialog = new OpenFileDialog())
+            {
                 if (oDialog.ShowDialog() == DialogResult.OK)
                 {
                     oDialog.InitialDirectory = Application.StartupPath;
                     oDialog.Filter = "그림 파일  (*.jpg, *.gif, *.bmp) | *.jpg; *.gif; *.bmp; | *.*";
 
                     //MessageBox.Show(Properties.Resources.Tagicoma_04.ToString());
-                    
+
                     Mat src = Cv2.ImRead(oDialog.FileName, ImreadModes.Color);
 
                     //Mat src = Cv2.ImRead(@"..Resources\Tagicoma.04.jpg", ImreadModes.Color);
